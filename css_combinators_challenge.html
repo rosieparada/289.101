@@ -2,23 +2,46 @@
 <html>
 	<head>
 	<title>Task week 2</title>
-		<style>
-			p{
-				color: default;
-			  }
-			ol,li{
-				color:violet;
-			  }
+		<style type="text/css">
+
+			body{
+				color: black;
+				}
+
+			ol li {
+				   color: violet;
+			      }
+
+			div > p {
+						color:red;
+			        }
+					
+			div + p{
+					color:blue;
+				   }
+				   
+			p ~ span{
+					color:orange;
+				    }
+					
+			p.pink{
+					color:pink;
+			      }
+
 		</style>
 	</head>
 	<body>
 		<p>leave this text as the default black </p>
-		<ol>
-			<li>make the text for list items 1 and 2 violet using a descendant selector</li>
-			<li>make the text for list items 1 and 2 violet using a descendant selector</li>
-		</ol>
-		<p>make this text red using a child selector</p>
+
+		<p><ol>
+				<li>make the text for list items 1 and 2 violet using a descendant selector</li>
+				<li>make the text for list items 1 and 2 violet using a descendant selector</li>
+			</ol>
+		</p>
+		<div><p>make this text red using a child selector</p></div>
 		<p>make this text blue using an adjacent selector </p>
-		<p>make this text orange using a general sibling selector; and this phrase pink by combining 2 types of selectors</p>
+		<span>make this text orange using a general sibling selector;</span>
+		<p class="pink"> and this phrase pink by combining 2 types of selectors</p>
 	</body>
 </html>
+
