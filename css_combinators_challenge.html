@@ -3,31 +3,27 @@
 	<head>
 	<title>Task week 2</title>
 		<style type="text/css">
-
-			body{
+			body{				/* Default black text */
 				color: black;
 				}
-
-			ol li {
+			ol li {				/* Descendant selector */
 				   color: violet;
 			      }
-
-			div > p {
+			div > p {			/* child selector */
 						color:red;
 			        }
 					
-			div + p{
+			div + p{			/* djacent selector */
 					color:blue;
 				   }
 				   
-			p ~ span{
+			p ~ span{			/* general sibling selector */
 					color:orange;
 				    }
 					
-			span.pinktext{
-					color:pink;
-			      }
-
+			#textinpink{  
+									color:pink;
+								 }
 		</style>
 	</head>
 	<body>
@@ -41,7 +37,6 @@
 		<div><p>make this text red using a child selector</p></div>
 		<p>make this text blue using an adjacent selector </p>
 		<span>make this text orange using a general sibling selector;</span>
-		<span class="pinktext"> and this phrase pink by combining 2 types of selectors</span>
+		<span id="textinpink"><code>and this phrase pink by combining 2 types of selectors</code></span>
 	</body>
 </html>
-
