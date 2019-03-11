@@ -1,0 +1,10 @@
+
+            /* style for important text */
+            .important{
+                color:green;
+                font-style:italic;
+                font-weight: bold;
+            }
+            .important{
+                color:red;
+            }
