@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
-
-d* { outline: red 1px solid; } 
+/**/
+d* { outline: red 1px solid; } /*this select everything in the web page*/
 
 body {
     background-color: #82DDB5;
@@ -45,4 +45,66 @@ body {
     font-weight: bold;
     margin-top: 25px;
     padding: 15px 30px;
+}
+
+#what{
+    background-color: rgba(200,240,220,0.8);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 400px;
+    color:#377788;
+    line-height: 1.2em;
+}
+
+#what h1,#what h2{
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+}
+
+#what p{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#what h1 + p{
+    font-size: 1.4em;
+    line-height: 1.2em;
+}
+
+#sponsor_logos{
+    word-spacing: 30px;
+}
+
+#sponsor_logos img{
+    width: 300px;
+    padding-right: 30px;
+}
+
+#why{
+    background-color: #b6ead3;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:#377788;
+    line-height: 1.2em;    
+}
+
+#why h1{
+               width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+}
+#why p{
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+    text-align: left;
+    line-height: 1.2em;
+}
+#where{
+    background-image: url=("img/map.gif");
 }
