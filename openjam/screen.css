@@ -109,6 +109,7 @@ body {
 #where{
     background-image: url("img/map.gif");
     background-position: center;
+    /*background-size: 500%;*/
     width: 800px;
     padding-top: 40px;
     padding-bottom: 40px;
