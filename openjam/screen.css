@@ -130,3 +130,22 @@ body {
 	font-weight: 900;
 	padding-right: 150px;
 }
+#when{
+    background-color: #439998;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:#ffffff;
+    line-height: 1.2em;    
+}
+#when h1,#when h2,#when h3{
+               width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+}
+ #when ul{
+               width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+ }
