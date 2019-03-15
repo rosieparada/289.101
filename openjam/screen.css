@@ -129,23 +129,64 @@ body {
 	color:#bb4488;
 	font-weight: 900;
 	padding-right: 150px;
+	padding-bottom:350px;
 }
 #when{
-    background-color: #439998;
+    background-image: url("img/wires.png");
+	background-color: #439998;
     padding-top: 40px;
     padding-bottom: 40px;
     color:#ffffff;
     line-height: 1.2em;    
 }
-#when h1,#when h2,#when h3{
-               width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
+#w h1 + p{
+font-size: 2.5em;
 }
- #when ul{
-               width: 800px;
+
+
+#when h1,#when h2,#when h3{
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
+				margin-top:30px;
+				margin-bottom:10px;
+}
+ #when > h3{
+	 border-top: dashed;
+	 padding: 15px 30px;
  }
+ #when ul {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+}
+#when ul > li{
+ margin-right:10px;
+}
+#who{
+	background-color:white;
+    color:#347788;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 1.2em;  	
+}
+#who h1{
+	text-align:center;
+	font-size: 2.0em;
+}
+#who p{
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+				text-align: left;
+				line-height: 1.2em;
+				font-size: 1.2em;
+}
+#footer{
+	background-image: url("img/texture.jpg");
+	margin-top:50px;
+	margin-bottom:50px;
+	text-align:center;
+}
+ 
