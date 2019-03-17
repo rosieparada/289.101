@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 /**/
-d* { outline: red 1px solid; } /*this select everything in the web page*/
+d* { outline: red 1px solid; }
 
 body {
     background-color: #82DDB5;
@@ -93,15 +93,15 @@ body {
 }
 
 #why h1{
-               width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
+	width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 #why p{
-                width: 800px;
-                margin-left: auto;
-                margin-right: auto;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
     text-align: left;
     line-height: 1.2em;
 }
@@ -109,7 +109,6 @@ body {
 #where{
     background-image: url("img/map.gif");
     background-position: center;
-    /*background-size: 500%;*/
     width: 800px;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -119,10 +118,10 @@ body {
 }
 
 #where h1{
-               width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 #where p{
     text-align: right;
@@ -176,12 +175,12 @@ font-size: 2.5em;
 	font-size: 2.0em;
 }
 #who p{
-                width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-				text-align: left;
-				line-height: 1.2em;
-				font-size: 1.2em;
+	width: 800px;
+    margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	line-height: 1.2em;
+	font-size: 1.2em;
 }
 #footer{
 	background-image: url("img/texture.jpg");
