@@ -3,9 +3,7 @@
     <head>
         <title>Layout 6</title>
         <style>
-            * {
-                outline: 1px solid black;
-            }
+            
             body {
                 margin: 0;
             }
@@ -17,34 +15,46 @@
             #blue{
                 background-color: blue;
                 display:grid;
-                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-columns: 50% 50%;
                 height: 200px;
             }
-            .yellow1{
-                background-color: yellow;
-                margin: 25px;
-                grid-column: 4/5;
-                height: 120px;
-                width:120px;
-                padding-top: 25px;
+            .simpleblue{
+                
+                grid-column: 2/2;
+                height: 200px;
+                width:400px;
+				border-left-width:thin;
+				border-left-style:solid;
+				
             } 
+           #green{
+                background-color:lime;
+                display:grid;
+                height: 200px;
+            }
 
             #red{
                 background-color: red;
                 display:grid;
-                grid-template-columns: 25% 25% 50%;
+                grid-template-columns: 50% 50%;
                 height: 400px;
                 padding: 20px;
             }
-
-            .yellow2{
+			#leftgroupyellow{
+				grid-template-columns: 1/2;
+			}
+			#rightgroupyellow{
+				grid-column: 2/2;
+			}
+ 
+            .yellow1{
                 background-color: yellow;
                 height: 120px;
                 width:120px;
-                margin-top: 25px;
-                margin-left: 25px;                
+                margin-top: 15px;
+                margin-left: 15px;                
             }
-            .yellow3{
+            .yellow2{
                 background-color: yellow;
                 height: 340px;
                 width:320px;
@@ -52,26 +62,24 @@
                 margin-left: 25px;                
             }
             
-            #green{
-                background-color:lime;
-                display:grid;
-                height: 200px;
-            }
             
         </style>
     </head>
     <body>
         <div id="container">
             <div id="blue">
-                <div class="yellow1"></div>
+                <div class="simpleblue"></div>
+            </div>
+			<div id="green">
             </div>
             <div id="red">
-            <div></div>
-            <div><div class="yellow2"></div></div>
-            <div><div class="yellow3"></div></div>
+			  <div id="leftgroupyellow">
+				<div class="yellow1">gg</div>
+					<div id="yellow2">hi</div>
+				</div>
+			  <div class="rightgroupyellow">Content for  class "rightgroupyellow" Goes Here</div>
             </div>
-            <div id="green">
-            </div>
+            
 
             
         </div>
