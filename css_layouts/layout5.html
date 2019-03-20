@@ -3,9 +3,7 @@
     <head>
         <title>Layout 5</title>
         <style>
-            * {
-                outline: 1px solid black;
-            }
+            
             body {
                 margin: 0;
             }
@@ -32,10 +30,18 @@
             #red{
                 background-color: red;
                 display:grid;
-                grid-template-columns: 25% 25% 50%;
+                grid-template-columns: 25% 75%;
                 height: 400px;
-                padding: 20px;
+                padding-left: 20px;
+				padding-right: 20px;
             }
+			
+			#twoboxes{
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+				border-left-width:thin;
+				border-left-style:solid;
+			}
 
             .yellow2{
                 background-color: yellow;
@@ -66,9 +72,11 @@
                 <div class="yellow1"></div>
             </div>
             <div id="red">
-            <div></div>
-            <div><div class="yellow2"></div></div>
-            <div><div class="yellow3"></div></div>
+				<div></div>
+				<div id="twoboxes">
+					<div><div class="yellow2"></div></div>
+					<div><div class="yellow3"></div></div>
+				</div>
             </div>
             <div id="green">
             </div>

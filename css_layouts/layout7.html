@@ -1,81 +1,189 @@
 <!doctype html>
 <html>
-<head>
-<title>Layout 7</title>
-	<style>
-		* {
-                outline: 1px solid black;
-            }
-            body {
-                margin: 0;
-		}
-		#container{
-                margin:auto;
-                max-width: 800px;
-                
-            }
-		#blue{
-			background-color:blue;
-			height: 90px;
-			
-		}
-		#blueleft{
-			background-color:yellow;
-			height: 45px;
-			width: 180px;
-			margin-top: 20px;
-			margin-left: 20px;
-			float: left;
-		}
-		#blueright{
-			background-color:yellow;
-			height: 45px;
-			width: 540px;
-			margin-top: 20px;
-			margin-right: 20px;
-			float: right;
-		}
-		#green{
-                background-color: greenyellow;
-                height: 500px;
-            }
-		#red{
-			background-color: red;
-			height: 400px;
-			padding-top: 20px;
-		}
-		#redtopyellow{
-			background-color: yellow;
-			height: 75px;
-			width: 700px;
-			margin-left: 50px;
-			
-		}
-		#blue2{
-			background-color:blue;
-			height: 500px;
-		}
-	</style>
-</head>
+	<head>
+	<title>Layout 7</title>
+		<style>
+			   body {
+					margin: 0;
+				}
+				#container{
+					margin:auto;
+					max-width: 800px;
+				}
 
-<body>
-<div id="container">
-		<div id="blue">
-		  <div id="blueleft"></div>
-		 <div id="blueright"></div>
+				#blue{
+					background-color:blue;
+					height: 100px;
+					display: grid;
+					grid-template-columns: 25% 75%;
+				}
+
+				#blueleft{
+					background-color:yellow;
+					height: 45px;
+					width: 180px;
+					margin-top: 20px;
+					margin-left: 20px;
+				}
+
+				#blueright{
+					background-color:yellow;
+					height: 45px;
+					width: 550px;
+					margin-top: 20px;
+					margin-left: 20px;
+				}
+
+				#green{
+					background-color: greenyellow;
+					height: 500px;
+				}
+
+				#red1{
+					background-color: red;
+					height: 400px;
+					padding-top: 20px;
+					display:grid;
+					display-row:15% 85%;
+				}
+
+				.yellowtop1{
+					background-color: yellow;
+					height: 75px;
+					width: 700px;
+					margin-left: 50px;
+					grid-temp: 1/2;	
+				}
+
+				.boxcontainer1{
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					margin:40px;
+					grid-gap: 14px;
+					padding: 20px;
+				}
+
+				.yellowsquare1{
+					height: 220px;
+					width:220px;
+					background-color: yellow;
+				}
+
+				.yellowsquare2{
+					height: 290px;
+					width:220px;
+					background-color: yellow;
+				}
+
+				#blue2{
+					background-color:blue;
+					height: 650px;
+					display: grid;
+					grid-template-rows:1fr 3fr;
+					padding-top: 20px;
+				}
+
+				#boxcontainer2{
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1fr;
+					grid-template-rows:1fr 1fr 1fr;
+					padding: 24px;
+					margin-left: 15px;
+				}
+
+				.yellowsquare{
+					background-color: yellow;
+					padding: 10px;
+					margin: 10px;
+					width:135px;
+					height: 130px;
+				}
+				#greentwo{
+					background-color: lime;
+					height: 450px;
+					padding-top: 20px;
+				}
+
+				#redtwo{
+					background-color:red;
+					height: 400px;
+					display:grid;
+					grid-template-rows: 10% 90%;
+					padding: 20px;
+				}
+
+				.boxcontainer3{
+					display:grid;
+					grid-template-columns: 75% 25%;
+					margin: 50px;
+				}
+
+				.largeyellow{
+					background-color:yellow;
+					width: 410px;
+					height: 300px;
+				}
+
+				.shortyellow{
+					background-color: yellow;
+					width: 200px;
+					height: 100px;
+				}
+
+				#bluethree{
+					background-color:blue;
+					height: 100px;
+				}
+		</style>
+	</head>
+
+	<body>
+	<div id="container">
+			<div id="blue">
+			  <div id="blueleft"></div>
+			  <div id="blueright"></div>
+			</div>
+	  <div id="green"></div>
+	  <div id="red1">
+		<div class="yellowtop1"></div>
+		<div class="boxcontainer1">
+			<div class="yellowsquare1"></div>
+			<div class="yellowsquare1"></div>
+			<div class="yellowsquare1"></div>
+		  </div>
+	  </div>
+	  <div id="blue2">
+		<div class="yellowtop1"></div>
+		<div id="boxcontainer2">
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
+			<div class="yellowsquare"></div>
 		</div>
-  <div id="green"></div>
-  <div id="red">
-    <div id="redtopyellow"></div>
-      <div id="redtopleft">Content for  id "redtop" Goes Here</div>
-      <div id="reptopcenter">Content for  id "reptopcenter" Goes Here</div>
-      <div id="redtopright">Content for  id "redtopright" Goes Here</div>	
-  </div>
-  <div id="blue2">
-    <div id="bluetop2">Content for  id "bluetop2" Goes Here</div>
-	
-  </div>
-</div>
-
-</body>
+	  </div>
+	  <div id="greentwo">
+		  <div class="yellowtop1"></div>
+		  <div class="boxcontainer1">
+			 <div class="yellowsquare2"></div>
+			 <div class="yellowsquare2"></div>
+			 <div class="yellowsquare2"></div>
+		  </div>
+	  </div>
+	  <div id="redtwo">
+		 <div class="yellowtop1"></div>
+		 <div class="boxcontainer3">
+		  <div class="largeyellow"></div><div class="shortyellow"></div>  
+		 </div>
+	  </div>
+	  <div id="bluethree"></div>
+	</div>
+	</body>
 </html>

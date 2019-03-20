@@ -3,9 +3,6 @@
     <head>
         <title>Layout 2</title>
         <style>
-            * {
-                outline: 1px solid black;
-            }
             #container{
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -23,8 +20,8 @@
             .red{
                 background-color: red;
                 height: 400px;
-                
-                
+			    border-left-width:thin;
+				border-left-style:solid;           
             }
             
             #green{
@@ -38,11 +35,11 @@
     </head>
     <body>
         <div id="container">
-            <div id="blue">Blue</div>
-            <div class="red">Red</div>
-            <div class="red">Red</div>
-            <div class="red">Red</div>
-            <div id="green">Green</div>
+            <div id="blue"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div id="green"></div>
             
         </div>
     </body>

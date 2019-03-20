@@ -19,7 +19,6 @@
                 height: 200px;
             }
             .simpleblue{
-                
                 grid-column: 2/2;
                 height: 200px;
                 width:400px;
@@ -40,29 +39,44 @@
                 height: 400px;
                 padding: 20px;
             }
+
 			#leftgroupyellow{
-				grid-template-columns: 1/2;
+				display:grid;
+				grid-template-rows: 1fr 1fr;				
 			}
 			#rightgroupyellow{
-				grid-column: 2/2;
+				display:grid;
+				grid-template-rows: 1fr 1fr;
+				margin-left: 10px;
+				
 			}
- 
+			.yellowcontainttwo{
+				display:grid;
+				grid-template-columns: 1fr 1fr;
+			}
             .yellow1{
                 background-color: yellow;
                 height: 120px;
-                width:120px;
+                width:158px;
                 margin-top: 15px;
-                margin-left: 15px;                
+                margin-left: 15px;
+				grid-column:1/2;
             }
             .yellow2{
                 background-color: yellow;
-                height: 340px;
-                width:320px;
-                margin-top: 25px;
-                margin-left: 25px;                
+                height: 120px;
+                width:158px;
+                margin-top: 15px;
+                margin-left: 15px;
+				grid-column:2/2;
             }
-            
-            
+			.yellow3{
+				background-color:yellow;
+				height: 200px;
+				width: 350px;
+				grid-row:2/2;
+				margin-left: 15px
+			}
         </style>
     </head>
     <body>
@@ -74,14 +88,20 @@
             </div>
             <div id="red">
 			  <div id="leftgroupyellow">
-				<div class="yellow1">gg</div>
-					<div id="yellow2">hi</div>
+				<div class="yellowcontainttwo">
+					<div class="yellow1"></div>
+					<div class="yellow2"></div>
 				</div>
-			  <div class="rightgroupyellow">Content for  class "rightgroupyellow" Goes Here</div>
+				<div class="yellow3"></div>
+			  </div>
+			  <div id="rightgroupyellow">
+				<div class="yellowcontainttwo">
+					<div class="yellow1"></div>
+					<div class="yellow2"></div>
+				</div>				  
+				<div class="yellow3"></div>
+				</div>
             </div>
-            
-
-            
         </div>
     </body>
 </html>
