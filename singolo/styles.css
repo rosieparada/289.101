@@ -43,7 +43,7 @@ body{
 }
 #banner{
     background-color: #f06c64;
-    height: 600px;
+    height: 480px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -51,6 +51,62 @@ body{
 #banner img{
     width: 95%;
     max-width: 780px;
+}
+
+#our_services{
+    background-color: white;
+    max-width: 780px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.title{
+    font-size: 1.9em;
+    color:#666d89;
+    margin-bottom:10px;
+    
+}
+.text_statement{
+    font-size: 1.3em;
+    color:#666d89;
+}
+#ourdesc{
+    display:grid;
+    grid-template-columns: auto;
+}
+#ourdesc .twocol-span{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+#gallery{
+    background-color: #2d303a;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#photos{
+    background-color: blue;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px; 
+}
+#photos .photo-span{
+    background-color: yellow;
+    grid-column: 1/5;
+    height: 77.6px;
+    margin: 15px;
+}
+#photos .red {
+    background-color: red;
+    height: 77.6px;
+    margin: 15px;
 }
 
 @media screen and (max-width: 480px){
