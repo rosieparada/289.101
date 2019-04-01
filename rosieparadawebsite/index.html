@@ -2,7 +2,12 @@
 <html lang="=en">
     <head>
         <meta charset="utf-8"/>
+        <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        
         <title>Rosie Parada Photography</title>
+        
         <link rel="stylesheet" href="style.css"/>
     </head>
     
@@ -13,13 +18,13 @@
                     <div class="links">
                         <a href="#">HOME</a> 
                         &bull;
-                        <a href="#">ABOUT ME</a>
+                        <a href="#about">ABOUT ME</a>
                         &#8226;
-                        <a href="#">PORTFOLIO</a>
+                        <a href="#portfolio">PORTFOLIO</a>
                         &#8226;
-                        <a href="#">CONTACT ME</a>
+                        <a href="#contactme">CONTACT ME</a>
                         &#8226;
-                        <a href="#">SOCIAL MEDIA</a>
+                        <a href="#socialmedia">SOCIAL MEDIA</a>
                     </div>
                 </div>
         </div>
@@ -31,7 +36,7 @@
         </div>
 		
         <div id="aboutme">
-			<h1>About Me</h1>
+			<h1 id="about">About Me</h1>
             
             <div class="span_aboutme">
                 
@@ -53,21 +58,24 @@
 		</div>
         
 		<div id="myportfolio">
-			<h1>My Portfolio</h1>
-			<div style="text-align: center;">
-				<img src="images/mihimihi1.jpg"/><br/>
-			</div>
+			<h1 id="portfolio">My Portfolio</h1>
+            <div class="square_photos">
+                <a data-fancybox="gallery" href="images/small_mihimihi1.jpg"><img src="images/mihimihi1.jpg"/></a>
+                <a data-fancybox="gallery" href="images/small_mihimihi2.jpg"><img src="images/mihimihi2.jpg"/></a>
+                <a data-fancybox="gallery" href="images/small_mihimihi3.jpg"><img src="images/mihimihi3.jpg"/></a>
+                <a data-fancybox="gallery" href="images/small_mihimihi5.jpg"><img src="images/mihimihi5.jpg"/></a>
+            </div>
 		</div>
 		
 		<div id="contactme">
-			<h1>Contact Me</h1>
+			<h1 id="contactme">Contact Me</h1>
 			<div class="contact">
                 <p>Email: rosadelcarmen@gmail.com</p>
                 <p>Address: 173 Onepu Rd, Lyall Bay, Wellington 6022</p>
                 <p>Mobile Phone: 021 022 77480</p>
             </div>
 		</div>
-		 <div id="socialmedia"><h1>Social Media</h1></div>
+		 <div id="socialmedia"><h1 id="socialmedia">Social Media</h1></div>
         <div id="footer">Copyright Rosie Parada 2019</div>
 
     </body>
