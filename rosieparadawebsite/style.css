@@ -15,8 +15,9 @@ body{
 .nav{
     max-width: 1023px;
     margin: auto;
-    display:grid;
-    grid-template-columns: 200px auto;
+	text-align:center;
+    /*display:grid;
+    grid-template-columns: 200px auto;*/
 }
 .logo{
     margin-top: 25px;
@@ -26,7 +27,7 @@ body{
     padding-left: 10px;
 }
 .links{
-    text-align: right;
+    /*text-align: right;*/
     margin-top: 40px;
     font-size: 0.75rem;
     color:#d5eaf2;
