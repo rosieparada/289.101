@@ -1,113 +1,104 @@
 <!DOCTYPE html>
+
 <html>
+
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <title>Layout 2</title>
-
+        <meta charset="utf-8" />
+        <title>Layout 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        
         <style>
-            *{outline:#CCC solid 8px;}
-            .blue{
-                background-color: lightblue; 
-                height: 100px;
-            }
-            .green{
-                background-color: lightgreen; 
-                height: 100px;
-            }
-			.orange{
-				background-color:orange;
-				height: 100px;				
-			}
-			.grey{
-				background-color: darkgrey;
-				height: 100px;
-			}
-			.pink{
-				background-color:pink;
-				height: 100px;
-			}
-			.red{
-				background-color: red;
-				height:50px;
-			}
+            *    { outline: white 8px solid }
+            body { padding-top: 8px }
             
-            /* Small devices (landscape phones, 576px and up)*/
+            /* xs devices */
+            .blue {
+                background-color: #3FB4FF;
+                height: 80px;
+            }
+            
+            .green {
+                background-color: #A6D800;
+                height: 80px;
+            }
+            
+            .orange {
+                background-color: #FFAE2E;
+            }
+            
+            .maroon {
+                background-color: #AF3552;
+                height: 250px;
+            }
+            
+            .grey {
+                background-color: #C4C4C4;
+                height: 160px;
+            }
+            
+            .pink {
+                background-color: #EC8FEF;
+                height: 100px;
+            }
+            
+            /* sm devices */
             @media (min-width: 576px) {
-
-
             }
-
-            /* Medium devices (tablets, 768px and up)*/
-            @media (min-width: 768px) {}
-
-                        
-            /* Large devices (desktops, 992px and up)*/
-            @media (min-width: 992px) {
-							.blue{
-							height: 40px;
-							}
-                            .green{
-                            height: 200px;
-                              }
-							.orange{
-							height:400px;
-							}
-            }
-
-            /* Extra large devices (large desktops, 1200px and up)*/
-            @media (min-width: 1200px) {
-                            .green{
-                            height: 700px;
-                              }
-                            .orange{
-                            height: 700px;
-                              }
-                            .red{
-                            height: 700px;
-                              }
+            
+            /* md devices */
+            @media (min-width: 768px) {
+                .green {
+                    height: 200px
                 }
+                .maroon {
+                    background-color: #AF3552;
+                    height: 480px;
+                }
+            }
+            
+            /* lg devices */
+            @media (min-width: 992px) {
+                .blue {
+                    height: 60px
+                }
+                .green, .maroon {
+                    height: 600px;
+                }
+                .grey {
+                    height: 100px;
+                }
+            }
+            
+            /* xl devices */
+            @media (min-width: 1200px) {
+            }
         </style>
-
     </head>
+    
     <body>
-        <div id="container">
+        <div class="container">
+            
             <div class="row">
-                <div class="blue col-12"></div>
+                <div class="col-12 blue"></div>
             </div>
-			<div class="row">
-				<div class="green col-12 col-xl-1 "></div>
-				<div class="orange col-12 col-xl-4 ">
-					<div class="row">
-					<div class="grey col-4"></div>
-					<div class="pink col-8 d-none d-xl-block"></div>
-					</div>
-					<div class="row ">
-					<div class="grey col-4"></div>
-					<div class="pink col-8 d-none d-xl-block"></div>
-					</div>
-					<div class="row">
-					<div class="grey col-4"></div>
-					<div class="pink col-8 d-none d-xl-block"></div>
-					</div>
-					<div class="row">
-					<div class="grey col-4"></div>
-					<div class="pink col-8 d-none d-xl-block"></div>
-					</div>
-					<div class="row">
-					<div class="grey col-4"></div>
-					<div class="pink col-8 d-none d-xl-block"></div>
-					</div>
-					<div class="row">
-					<div class="grey col-4"></div>
-					<div class="pink col-8 d-none d-xl-block"></div>
-					</div>
-				</div>
-				<div class="red col-12 col-lg-6 col-xl-3 d-none d-md-block"></div>
-			</div>
-		</div>
-
-
+            
+            <div class="row">
+                <div class="col-12 green col-lg-3 "></div>
+                <div class="col-12 col-md-6 col-lg-6 orange">
+                    <div class="row">
+                        <div class="col-6 col-lg-4 grey"></div> <div class="col-8 d-none d-lg-block pink"></div>
+                        <div class="col-6 col-lg-4 grey"></div> <div class="col-8 d-none d-lg-block pink"></div>
+                        <div class="col-6 col-lg-4 grey"></div> <div class="col-8 d-none d-lg-block pink"></div>
+                        <div class="col-6 col-lg-4 grey"></div> <div class="col-8 d-none d-lg-block pink"></div>
+                        <div class="col-6 col-lg-4 grey"></div> <div class="col-8 d-none d-lg-block pink"></div>
+                        <div class="col-6 col-lg-4 grey"></div> <div class="col-8 d-none d-lg-block pink"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 maroon"></div>
+            </div>
+            
+        </div>
     </body>
+
 </html>
