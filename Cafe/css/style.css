@@ -1,0 +1,134 @@
+*    { outline: white 1px solid }
+body { 
+	padding-top: 12px;
+		
+}
+/* xs devices */
+.links{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color:#grey;
+}
+.links a{
+    color:grey;
+    text-decoration: none;
+    padding-left: 10;
+    padding-right: 10px;
+}
+
+.nav{
+		background-color: #F2D3AF;
+		height:65px;
+	}
+.menu{
+	background-color: #F2D3AF;
+}
+.content_body{
+		background-color: #C96534;
+	    background-image: url('../img/Argent-brick.jpg');
+		height:400px;
+	}
+.footer{
+		background-color: #F2D3AF;
+		height:50px;
+	}
+.logo2{
+		max-width: 70%;
+		display: block;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+.logo1{
+		max-width: 100px;
+		margin-left:8px;
+		
+}
+.links{
+        margin-top: 10px;
+        text-align: center;
+	}
+	
+
+
+            .blue {
+                background-color: #3FB4FF;
+                height: 100px;
+            }
+            
+            .green {
+                background-color: #A6D800;
+                height: 110px;
+            }
+            
+            .orange {
+                background-color: #FFAE2E;
+                height: 170px;
+            }
+            
+            .grey {
+                background-color: #C4C4C4;
+                height: 60px;
+            }
+            
+/* sm devices */
+@media (min-width: 576px) {
+            }
+            
+/* md devices */
+@media (min-width: 768px) {
+                .green {
+                    height: 170px;
+                }
+                .orange {
+                    background-color: #FFAE2E;
+                    height: 120px;
+                }
+}
+            
+ /* lg devices */
+ @media (min-width: 992px) {
+
+.content_body{
+		background-color: #C96534;
+	    background-image: url('../img/Argent-brick.jpg');
+		height:600px;
+	}
+.footer{
+		background-color: #F2D3AF;
+		height:100px;
+}
+.logo2{
+		max-width: 50%;
+		display: block;
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+.logo1{
+		max-width: 150px;
+		display:block;
+		margin-left:10px;
+}
+.links{
+        grid-column:1/3;
+        margin-top: 10px;
+        text-align: center;
+        }
+
+
+                .green {
+                    height: 230px;
+                }
+                .orange {
+                    height: 180px;
+                }
+                .grey {
+                    height: 170px;
+                }
+ }
+            
+            /* xl devices */
+            @media (min-width: 1200px) {
+            }
