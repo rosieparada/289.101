@@ -3,7 +3,8 @@
 	<head>
 		 <meta charset="utf-8"/>
 		 <title>Central Perk</title>
-		 <meta name="viewport" content="width=device-width, initial-scale=1"/>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 		 <link rel="stylesheet" href="css/style.css"/>
 		</head>
@@ -11,39 +12,44 @@
 	<div class="container">
 	<!-- Header - menu -->
 		        <div class="row">
-				                <div class="col-lg-1 col-xs-1 nav"><img class="logo1" src="img/logo1.png"/></div>
-								<div class="col-lg-11 col-xs-11  menu">									
-									<div class="links">
-									  <a href="#About" class="active">About</a>&#8226;
-									  <a href="#Reservations">Reservations</a>&#8226;
-									  <a href="#Menus">Menus</a>&#8226;
-									  <a href="#Shop">Shop</a>&#8226;
-									  <a href="#Private">Private Hire</a>
-									</div>
+				                <div class="col-lg-4 col-xs-6 nav"><img class="logo1" src="img/logo1.png"/></div>
+								<div class="col-lg-8 col-xs-6  menu">
+									<div class="topnav" id="myTopnav">
+									  <a href="about.html" class="active">About &#8226;</a>
+									  <a href="reservations.html">Reservations &#8226;</a>
+									  <a href="menus.html">Menus &#8226;</a>
+									  <a href="shop.html">Shop &#8226;</a>
+									  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+									  <i class="fa fa-bars"></i>
+									  </a>
+									</div>								
 								</div>
                 </div>
 	<!-- Banner body -->			
 				<div class="row">
-					<div class="col-lg-12 content_body"><img class="logo2" src="img/logo2.png"/>
+					<div class="col-lg-12 content_body">
+						<img class="img-fluid" src="img/logo2.png"/>
+						<div><a href="reservations.html" class="button">Book a Table</a></div>
                     </div>
 			    </div>
+
 				
      <!-- Footer- menu -->          
 				<div class="row">
-					<div class="col-lg-12 footer">Here footer page</br></div>
+					<div class="col-lg-12 footer">© 2019 CENTRAL PERK. ALL RIGHTS RESERVED.</br></div>
                 </div>
 				
 				
 	</div>
 	<script>
-		function myFunction() {
-		  var x = document.getElementById("myTopnav");
-		  if (x.className === "topnav") {
-			x.className += " responsive";
-		  } else {
-			x.className = "topnav";
-		  }
-		}
-</script>
+	function myFunction() {
+	  var x = document.getElementById("myTopnav");
+	  if (x.className === "topnav") {
+		x.className += " responsive";
+	  } else {
+		x.className = "topnav";
+	  }
+	}
+	</script>
 	</body>
 </html>
